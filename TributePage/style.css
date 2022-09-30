@@ -1,0 +1,213 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: cursive;
+}
+html{
+    scroll-behavior: smooth;
+}
+.heading{
+    font-size: 25px;
+    margin: 10px 0px;
+    text-shadow: 2px 2px rgb(196, 196, 196);
+}
+.heading2{
+    font-size: 25px;
+    text-align: center;
+    text-shadow: 2px 2px rgb(196, 196, 196);
+}
+#navigation_bar
+{
+    background-color: rgb(221, 252, 192);
+    padding-bottom: 20px;
+    position: sticky;
+    top: 0px;
+}
+#nav_list
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    flex-wrap: wrap;
+}
+#nav_list li
+{
+    list-style: none;
+    margin-left: 40px;
+}
+.link{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+.link:hover{
+    color: rgb(50, 148, 68);
+}
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(234 255 214);
+}
+#banner{
+    margin-bottom: 50px;
+    border-radius: 20px;
+    width:500px;
+}
+#section_1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+#img_1 {
+    width: 200px;
+    border-radius: 100px;
+    margin: 30px 0px;
+    box-shadow: 0px 0px 15px 15px rgb(207 207 207);
+}
+#section_1 p{
+    width: 800px;
+}
+
+
+#fg_main
+{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(234 255 214);
+    margin-bottom: 20px;
+}
+#fg1 , #fg2
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 15px 0px;
+}
+#fg1 img , #fg2 img
+{
+    width: 180px;
+    height: 193px;
+    border-radius: 20px;
+    animation: anime1 0.5s 1 backwards;
+}
+.div1 , .div2
+{
+    text-align: center;
+    margin: 5px 5px;  
+}
+.div1
+{
+    border-radius: 10px;
+    box-shadow:  0px 0px 12px 12px rgb(201, 229, 175);
+}
+.div1:hover , .div2:hover{
+    animation-name: div_animation;
+    animation-duration: 0.3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    cursor: pointer;
+}
+@keyframes div_animation {
+    to{
+        border-bottom: 1px solid grey;
+        border-top: 1px solid grey;
+        border-radius: 20px;
+        font-size: 15px;
+        box-shadow:  0px 0px 10px 10px rgb(207 207 207);
+    } 
+}
+#a_main
+{
+    display: flex;
+    flex-direction: column;
+}
+#a1 , #a2
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 15px 0px;
+}
+#a1 img , #a2 img
+{
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+}
+.div2{
+    background-color:rgb(234 255 214);
+    border: 3px dotted black;
+    width: 260px;
+    border-radius: 10px;
+}
+
+#f_main
+{
+    background-color: rgb(234 255 214);
+}
+#f_list
+{
+    margin-left: 5px;
+    display: flex;
+    flex-direction:column ;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+#f_list li
+{
+    margin: 5px 0px;
+}
+
+#final{
+    text-align: center;
+    background-color: rgb(234 255 214);
+    padding-top: 30px;
+}
+
+
+@media  screen and (max-width:821px) 
+{
+    #section_1 p 
+    {
+        width: 400px;
+        font-size: 10px;
+    }
+    
+}
+@media screen and (max-width:500px) 
+{
+    #banner
+    {
+        width: 280px;
+    }
+    
+}
+@media screen and (max-width:407px) 
+{
+    .link
+    {
+        font-size: 12px;
+    }
+    #nav_list li
+    {
+        margin-left: 10px;
+    }
+    .heading
+    {
+        font-size: 15px;
+    }
+    #section_1 p
+    {
+        width: 200px;
+    }
+    
+}
+
